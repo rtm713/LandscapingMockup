@@ -19,23 +19,48 @@ body {
 
 header {
     width: 100%;
+    padding: 20px;
     display: inline-flex;
     justify-content: space-around;
     align-items: center;
     background-color: var(--main);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
-header h1 {
+#headDiv {
+    display: inline-flex;
+    width: 100%;
+}
+
+.logoDiv {
+    display: block;
+    width: 18%;
+    padding: 15px 0 20px 0;
+    margin-top: 3%;
+    font-family: "Tangerine", cursive;
+    font-weight: 700;
+    background-color: var(--main);
+    text-align: center;
+    border-radius: 50%;
+    position:fixed;
+}
+
+.logoDiv h1 {
     color: var(--accent);
+    font-size: 50px;
+    margin: 0;
+}
+
+.logoDiv p {
+    margin: 0;
     font-size: 30px;
-    width: 30%;
+    color: white;
 }
 
 header a {
     color: white;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 header a:hover {
@@ -74,37 +99,32 @@ article h2, article h3, article p {
 }
 
 article h2 {
-    font-size: 50px;
+    font-size: 45px;
 }
 
 article h3 {
-    font-size: 40px;
+    font-size: 45px;
 }
 
 article p {
     margin: 4%;
-    text-shadow: 1px 1px 6px black;
-    font-size: 16px;
+    text-shadow: 2px 2px 4px black;
+    font-size: 15px;
 }
 
 article button {
     margin: auto;
-    padding: 15px 30px;
-    background-color: rgb(255, 255, 255, .5);
-    border: 2px solid green;
+    padding: 12px 26px;
+    background-color: rgb(30, 48, 42, .5);
+    border: 2px solid var(--main);
     border-radius: 8px;
-    color: green;
+    color: white;
     font-size: 20px;
-    text-shadow: 1px 1px 4px white;
-    box-shadow: 1px 1px 2px black;
+    text-shadow: 1px 1px 4px black;
 }
 
 article button:hover {
-    background-color: rgb(255, 255, 255, .8);
-}
-
-article button:active {
-    box-shadow: inset 1px 1px 2px black;
+    background-color: var(--main);
 }
 
 #bioPage {
