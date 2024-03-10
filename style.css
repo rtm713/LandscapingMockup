@@ -1,9 +1,75 @@
 
+body {
+    background-image: url(./images/landscapeimage.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: left bottom;
+    margin: 0;
+}
 
+#landingPage {
+    height: 100vh;
+}
 
+header {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: green;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
+header a {
+    color: white;
+}
 
+article {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: 10% 0 0 40%;
+}
 
-h1 {
-    color: red;
+article h2, article h3, article p {
+    text-align: center;
+    color: white;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 2px 2px 8px black;
+}
+
+article h2 {
+    font-size: 70px;
+}
+
+article h3 {
+    font-size: 50px;
+}
+
+article p {
+    margin: 4%;
+    text-shadow: 1px 1px 6px black;
+    font-size: 20px;
+}
+
+article button {
+    margin: auto;
+    padding: 20px 40px;
+    background-color: rgb(255, 255, 255, .5);
+    border: 2px solid green;
+    border-radius: 20%;
+    color: green;
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow: 1px 1px 4px white;
+}
+
+article button:hover {
+    background-color: rgb(255, 255, 255, .8);
+}
+
+#bioPage {
+    height: 100vh;
+    background-color: rgb(0, 58, 0);
 }
